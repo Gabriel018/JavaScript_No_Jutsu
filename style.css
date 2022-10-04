@@ -1,0 +1,39 @@
+
+
+.titulo { text-align: center;
+          color: blue;
+          font-size: 32px;}
+
+.grid{
+    justify-content: center;
+    display: grid;
+    width: 90%;
+    min-height: 120px;
+    padding: 20px;
+    grid-template-columns: 200px 200px 200px 200px;
+}
+
+.card{
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 9px;
+    text-align: center;
+}
+
+.card:hover{
+    
+    border: 9px solid rgb(214, 211, 13);
+    cursor: pointer;
+    width: 140px;
+    height: 140px;
+    
+}
+
+
+.modal{
+    display:none;
+    text-align: center;
+    
+}
