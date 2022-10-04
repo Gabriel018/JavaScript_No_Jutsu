@@ -1,10 +1,10 @@
-.titulo {
-    text-align: center;
-    color: blue;
-    font-size: 32px;
-}
 
-.grid {
+
+.titulo { text-align: center;
+          color: blue;
+          font-size: 32px;}
+
+.grid{
     justify-content: center;
     display: grid;
     width: 90%;
@@ -13,7 +13,7 @@
     grid-template-columns: 200px 200px 200px 200px;
 }
 
-.card {
+.card{
     width: 120px;
     height: 120px;
     background-color: red;
@@ -22,22 +22,18 @@
     text-align: center;
 }
 
-.card:hover {
+.card:hover{
+    
     border: 9px solid rgb(214, 211, 13);
     cursor: pointer;
     width: 140px;
     height: 140px;
-}
-
-.active {
-    border: 9px solid rgb(214, 211, 13);
-    width: 140px;
-    height: 140px;
+    
 }
 
 
-.modal {
-    display: none;
+.modal{
+    display:none;
     text-align: center;
-
+    
 }
