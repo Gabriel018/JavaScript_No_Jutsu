@@ -1,4 +1,5 @@
-* # Projeto que visa desenvolver um jogo/aplicativo baseado no Anime Naruto
+# JavaScript No Jutsu
+*  Projeto que visa desenvolver um jogo/aplicativo baseado no Anime Naruto,baseano nos movimentos da mao (Jutsu) onde fazendo a sequencia certa voce invoca determinado poder.
 
 
 
