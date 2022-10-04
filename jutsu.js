@@ -3,32 +3,37 @@ const grid = Array.from(document.querySelector(".grid")?.children);
 const btn = document.querySelectorAll(".card");
 const juju = document.querySelector(".jutsu");
 const modal = document.getElementById("mymodal");
-
-const clicados = []
+let modalActive = false; 
+const clicados = [];
 
 const fire = ['Dog', 'Galo', 'Porco']
 
 console.log(clicados)
-const mostrar = (clicked, ev) => {
+const mostrar = async (clicked, ev) => {
+   if (modalActive) return;
 
    const audio = new Audio('img/itachi_Jutsu.mp3');
 
-   grid.forEach(card=> {
-      if (card.classList.value.includes("active")) {
-         card.classList.remove("active");
-      };
-   });
    ev.classList.add("active");
-   console.log(clicked, ev)
+   console.log(clicked)
 
    clicados.push(clicked)
    if (JSON.stringify(clicados) == JSON.stringify(fire)) {
-      audio.play()
-      modal.style.display = "block"
-      setInterval(function () {
-         modal.style.display = "none"
-      }, 3000)
-   }
-   console.log(clicados)
+      modalActive = true;
+      modal.style.display = "block";
 
+      clicados.length = 0;
+      await audio.play();
+      setTimeout(function () {
+         modal.style.display = "none";
+         modalActive = false;
+         grid.forEach(card => {
+            if (card.classList.value.includes("active")) {
+               card.classList.remove("active");
+            };
+         });
+         console.log("time")
+      }, 3000);
+   };
+   console.log(clicados);
 };
