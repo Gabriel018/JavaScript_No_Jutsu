@@ -1,12 +1,17 @@
 
 const grid = Array.from(document.querySelector(".grid")?.children);
-const btn = document.querySelectorAll(".card");
+const estilo_btn = document.getElementById(".estilo")
+const btn = document.querySelector(".card");
 const juju = document.querySelector(".jutsu");
 const modal = document.getElementById("mymodal");
 let modalActive = false; 
 const clicados = [];
 
 const fire = ['Dog', 'Galo', 'Porco']
+
+function btn_estilo(){
+   btn.style.display = "block"
+}
 
 console.log(clicados)
 const mostrar = async (clicked, ev) => {
