@@ -1,7 +1,7 @@
 
 const grid = Array.from(document.querySelector(".grid")?.children);
-const estilo_btn = document.getElementById(".estilo")
-const btn = document.querySelector(".card");
+const estilo_btn = document.querySelectorAll(".estilo")
+const Btn = document.querySelector(".card");
 const juju = document.querySelector(".jutsu");
 const modal = document.getElementById("mymodal");
 let modalActive = false; 
@@ -9,10 +9,13 @@ const clicados = [];
 
 const fire = ['Dog', 'Galo', 'Porco']
 
-function btn_estilo(){
-   btn.style.display = "block"
-}
 
+function btn_estilo(){
+estilo_btn.forEach(card =>{
+ Btn.style.display = "block" 
+})
+
+}
 console.log(clicados)
 const mostrar = async (clicked, ev) => {
    if (modalActive) return;
