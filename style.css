@@ -4,17 +4,8 @@
     font-size: 42px;
 }
 
-#Fire{
-    background-image:url("img/chama.jpg")
-}
 
-#Earth{
-    background-image:url("img/terra.jpg")
-}
 
-#Water{
-    background-image:url("img/agua.jpg")
-}
 
 .grid {
     justify-content: center;
@@ -32,21 +23,17 @@
 }
 
 .estilo{
-
-    font-family: cursive;
+    background-color: black;
+    border: 6px solid yellow;
+    color: orangered;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
     text-align: center;
-    border: 6px solid rgb(211, 92, 12);
-    font-size: 20px;
-    color: aliceblue;
-    width: 160px;
-    height: 80px;
-    border-radius: 9px;
-  
 }
 
 .estilo:hover{
-    background-color: brown;
-    font-size: 22px;
+    
+    font-size: 32px;
     cursor: pointer;
 }
 

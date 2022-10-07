@@ -11,9 +11,8 @@ const fire = ['Dog', 'Galo', 'Porco']
 
 
 function btn_estilo(){
-estilo_btn.forEach(card =>{
- Btn.style.display = "block" 
-})
+grid.forEach(card =>{(console.log(card))})
+
 
 }
 console.log(clicados)
