@@ -4,15 +4,24 @@ const estilo_btn = document.querySelectorAll(".estilo")
 const Btn = document.querySelector(".card");
 const juju = document.querySelector(".jutsu");
 const modal = document.getElementById("mymodal");
+
+const img_info = document.querySelector(".img_info")
 let modalActive = false; 
 const clicados = [];
 
 const fire = ['Dog', 'Galo', 'Porco']
 
+function mostrar_img(){
+  img_info.style.display = "block"
+}
+
+function fechar_img(){
+   img_info.style.display = "none"
+}
 
 function btn_estilo(){
-grid.forEach(card =>{(card.style.display = 'block')})
-
+const audio1 = new Audio('img/Jutsu-Style.mp3')
+audio1.play()
 
 }
 console.log(clicados)

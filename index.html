@@ -9,18 +9,30 @@
 </head>
 <body background="img/fundo.jpg">
     <h2 class="titulo">MENU JUTSUS</h2>
-
+    
     <div class="Estilo-btn">
-        <button id="Fire" class="estilo" onclick="btn_estilo()">Style Fire</button>
-        <button id="Earth" class="estilo">Style Earth</button>
-        <button id="Water" class="estilo">Style Water</button>
+        <div class="img_info"><img src="img/Dragon_fire.jpg" alt="" height="400px" width="400px"></div>
+        <button id="Fire" class="estilo"  onclick="btn_estilo()" onmouseover="mostrar_img()" onmouseout="fechar_img()">Style Fire</button>
+        <button id="Earth" class="estilo" onclick="btn_estilo()">Style Earth</button>
+        <button id="Water" class="estilo" onclick="btn_estilo()">Style Water</button>
     </div>
-
+    
+   
     <div class="grid">
-        <button id="Dog" class="card" onclick="mostrar(this.id, this)"><img src="img/Cachorro.jpg" alt=""></button>
-        <button id="Galo" class="card" onclick="mostrar(this.id, this)"><img src="img/Galo.jpg" alt=""></button>
-        <button id="Porco" class="card" onclick="mostrar(this.id, this)"><img src="img/Porco.jpg" alt=""></button>
-        <button id="Rato" class="card" onclick="mostrar(this.id, this)"><img src="img/Rato.jpg" alt=""></button>
+        <button id="Dog" class="card" onclick="mostrar(this.id, this)"><img src="img/snake.jpg" alt=""></button>
+        <button id="Galo" class="card" onclick="mostrar(this.id, this)"><img src="img/bird.jpg" alt=""></button>
+        <button id="Porco" class="card" onclick="mostrar(this.id, this)"><img src="img/pig.jpg" alt=""></button>
+        <button id="Rato" class="card" onclick="mostrar(this.id, this)"><img src="img/rat.jpg" alt=""></button>
+
+        <button id="Dog" class="card" onclick="mostrar(this.id, this)"><img src="img/horse.jpg" alt=""></button>
+        <button id="Galo" class="card" onclick="mostrar(this.id, this)"><img src="img/ox.jpg" alt=""></button>
+        <button id="Porco" class="card" onclick="mostrar(this.id, this)"><img src="img/monkey.jpg" alt=""></button>
+        <button id="Rato" class="card" onclick="mostrar(this.id, this)"><img src="img/sheep.jpg" alt=""></button>
+        <button id="Dog" class="card" onclick="mostrar(this.id, this)"><img src="img/dragon.jpg" alt=""></button>
+        <button id="Galo" class="card" onclick="mostrar(this.id, this)"><img src="img/dog.jpg" alt=""></button>
+        <button id="Porco" class="card" onclick="mostrar(this.id, this)"><img src="img/tiger.jpg" alt=""></button>
+        <button id="Rato" class="card" onclick="mostrar(this.id, this)"><img src="img/rabbit.jpg" alt=""></button>
+    
     </div>
   <div id="mymodal" class="modal"> <img src="img/𝐏𝐑𝐎𝐌𝐄𝐒𝐒𝐀𝐒.gif" width="600" height="400" alt=""></div>  
     <script src="jutsu.js"></script>

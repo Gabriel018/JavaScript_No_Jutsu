@@ -4,21 +4,26 @@
     font-size: 42px;
 }
 
-
+.img_info{
+    display: none;
+    position: absolute;
+    z-index:1;
+}
 
 
 .grid {
+    padding: 60px;
     justify-content: center;
     display: grid;
     width: 90%;
     min-height: 120px;
-    padding: 20px;
+ 
     grid-template-columns: 200px 200px 200px 200px;
 }
 
 .Estilo-btn{
  display: flex;
- justify-content: space-around;
+ gap: 500px;
 
 }
 
@@ -38,7 +43,6 @@
 }
 
 .card {
-    display: none;
     width: 120px;
     height: 120px;
     background-color: red;
