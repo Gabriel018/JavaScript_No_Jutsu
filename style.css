@@ -7,6 +7,7 @@
 .img_info{
     display: none;
     position: absolute;
+    border: 3px solid black;
     z-index:1;
 }
 
@@ -43,8 +44,8 @@
 }
 
 .card {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 160px;
     background-color: red;
     border: 1px solid black;
     border-radius: 9px;
@@ -52,10 +53,10 @@
 }
 
 .card:hover {
-    border: 9px solid rgb(214, 211, 13);
+    border: 4px solid rgb(214, 211, 13);
     cursor: pointer;
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 180px;
 }
 
 .active {
@@ -68,5 +69,7 @@
 .modal {
     display: none;
     text-align: center;
+    position: absolute;
+    padding-left: 400px;
 
 }
