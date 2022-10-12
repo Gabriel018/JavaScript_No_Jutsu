@@ -9,10 +9,11 @@ const img_info = document.querySelector(".img_info")
 let modalActive = false; 
 const clicados = [];
 
-const fire = ['Dog', 'Galo', 'Porco']
+const fire = ['snake', 'dragon', 'rabbit','tiger']
 
 function mostrar_img(){
   img_info.style.display = "block"
+
 }
 
 function fechar_img(){
@@ -22,7 +23,6 @@ function fechar_img(){
 function btn_estilo(){
 const audio1 = new Audio('img/Jutsu-Style.mp3')
 audio1.play()
-
 }
 console.log(clicados)
 const mostrar = async (clicked, ev) => {
