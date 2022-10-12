@@ -23,9 +23,9 @@ function carrosel_jutsu(){
    if(dmx > img.length -1){
       dmx = 0
    }
-   imgs.style.transform  = `translateX(${-dmx * 110}px)`
+   imgs.style.transform  = `translateX(${-dmx * 190}px)`
 }
-setInterval(carrosel_jutsu,300)
+setInterval(carrosel_jutsu,200)
 
 
 function mostrar_img(){
@@ -40,42 +40,40 @@ function fechar_img(){
 console.log(clicados)
 const mostrar = async (clicked, ev) => {
    if (modalActive) return;
-   const audio = new Audio('img/itachi_Jutsu.mp3');
+   const audio = new Audio('img/Fire_jutsu.mp3');
    ev.classList.add("active");
    console.log(clicked)
    clicados.push(clicked)
    if (JSON.stringify(clicados) == JSON.stringify(fire)) {
       carrosel_jujtsu.style.display = "block"
-      
+      const audio = new Audio('img/Fire_jutsu.mp3');
+      audio.play()
 
       setTimeout(function(){
       
       if( carrosel_jujtsu.style.display = "none"){
          modalActive = true;
          modal.style.display = "block";
-         audio.play()
+   
+         setTimeout(function () {
+   
+            carrosel_jujtsu.style.display = "none"
+            modal.style.display = "none";
+            modalActive = false;
+            audio.pause()
+            grid.forEach(card => {
+               if (card.classList.value.includes("active")) {
+                  card.classList.remove("active");
+               };
+            });
+            console.log("time")
+         }, 7000);
           
       }   
-         
-      modalActive = true;
-      modal.style.display = "block";
-      audio.play()
-       
-      setTimeout(function () {
-         carrosel_jujtsu.style.display = "none"
-         modal.style.display = "none";
-         modalActive = false;
-         grid.forEach(card => {
-            if (card.classList.value.includes("active")) {
-               card.classList.remove("active");
-            };
-         });
-         console.log("time")
-      }, 1000);
-      },1100)
 
+      },1100)
       clicados.length = 0;
-      
+
    };
-   console.log(clicados);
+
 };
