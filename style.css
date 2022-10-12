@@ -72,3 +72,16 @@ justify-content: space-around;
     padding-left: 400px;
 
 }
+
+
+.carrocel{
+    width: 110px;
+    height: 140px;
+    overflow: hidden;
+}
+
+.container{
+ display: flex;
+  transition: transform 0.5 ease-in-out;
+  transform: translateX(0);
+}
