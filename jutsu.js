@@ -3,6 +3,7 @@ const grid = Array.from(document.querySelector(".grid")?.children);
 const estilo_btn = document.querySelector(".estilo")
 const juju = document.querySelector(".jutsu");
 const modal = document.getElementById("mymodal");
+const modal2 = document.getElementById("mymodal2");
 const carrosel_jujtsu = document.querySelector(".carrocel")
 const imgs = document.getElementById("img")
 const img  = document.querySelectorAll("#img img")
@@ -58,9 +59,20 @@ const mostrar = async (clicked, ev) => {
    clicados.push(clicked)
 
    if( JSON.stringify(clicados) == JSON.stringify(light)){
-      
-   }
+      const audio = new Audio('img/Chidori.mp3')
+      modal2.style.display = "block";
+      audio.play()
 
+      setTimeout(function(){
+      modal2.style.display = "none";
+      grid.forEach(card => {
+         if (card.classList.value.includes("active")) {
+            card.classList.remove("active");
+         };
+      });
+      },12000)
+
+   }
 
    if (JSON.stringify(clicados) == JSON.stringify(fire)) {
       carrosel_jujtsu.style.display = "block"
