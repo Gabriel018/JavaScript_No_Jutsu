@@ -12,6 +12,14 @@
     z-index:1;
 }
 
+.img_info2{
+    margin-left: 600px;
+    display: none;
+    position: absolute;
+    border: 3px solid black;
+    cursor: pointer;
+    z-index:1;
+}
 
 .grid {
     padding: 60px;
@@ -31,6 +39,7 @@ justify-content: space-around;
 .estilo{
     background-color: black;
     border: 6px solid yellow;
+    border-radius: 6px;
     color: orangered;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
