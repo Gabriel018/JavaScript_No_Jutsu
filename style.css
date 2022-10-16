@@ -21,6 +21,16 @@
     z-index:1;
 }
 
+
+.img_info3{
+    margin-left: 600px;
+    display: none;
+    position: absolute;
+    border: 3px solid black;
+    cursor: pointer;
+    z-index:1;
+}
+
 .grid {
     padding: 60px;
     justify-content: center;

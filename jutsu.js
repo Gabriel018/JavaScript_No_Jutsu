@@ -51,6 +51,12 @@ function mostrar_img2(){
  }
 
 
+//mostra invocaçao
+
+function mostrar_img3(){
+   
+}
+
 console.log(clicados)
 const mostrar = async (clicked, ev) => {
    if (modalActive) return;
