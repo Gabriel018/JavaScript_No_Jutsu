@@ -4,6 +4,7 @@ const estilo_btn = document.querySelector(".estilo")
 const juju = document.querySelector(".jutsu");
 const modal = document.getElementById("mymodal");
 const modal2 = document.getElementById("mymodal2");
+const modal3 = document.getElementById("mymodal3");
 const carrosel_jujtsu = document.querySelector(".carrocel")
 const imgs = document.getElementById("img")
 const img  = document.querySelectorAll("#img img")
@@ -14,6 +15,7 @@ let modal_jutus  = false
 
 const img_info = document.querySelector(".img_info")
 const img_info2 = document.querySelector(".img_info2")
+const img_info3 = document.querySelector(".img_info3")
 
 let modalActive = false; 
 const clicados = [];
@@ -21,6 +23,9 @@ const clicados = [];
 const fire = ['snake', 'dragon', 'rabbit','tiger']
 
 const light = ['boar','sheep','snake','horse','dragon']
+
+
+const invocation = ['boar','dog','monkey','bird','sheep']
 
 function carrosel_jutsu(){
    dmx++
@@ -54,8 +59,13 @@ function mostrar_img2(){
 //mostra invocaçao
 
 function mostrar_img3(){
-   
+   img_info3.style.display = "block"
 }
+
+function fechar_img3(){
+   img_info3.style.display = "none"
+}
+
 
 console.log(clicados)
 const mostrar = async (clicked, ev) => {
@@ -63,6 +73,21 @@ const mostrar = async (clicked, ev) => {
    ev.classList.add("active");
    console.log(clicked)
    clicados.push(clicked)
+
+   if (JSON.stringify(clicados) == JSON.stringify(invocation)){
+    const audio = new Audio('img/Summoning_Jutsu.mp3')  
+    modal3.style.display = "block"
+    audio.play()
+    
+    setTimeout(function(){
+      modal3.style.display = 'none'
+      audio.pause()
+    },6000)
+
+
+   }
+
+
 
    if( JSON.stringify(clicados) == JSON.stringify(light)){
       const audio = new Audio('img/Chidori.mp3')
